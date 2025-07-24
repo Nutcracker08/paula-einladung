@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Wann passt es dir?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Wir freuen uns (wir freuen uns) Schauen wir mal was wird (was wird)</h1>
+    <p>Wann hättest du denn Zeit für unsere kleine Orgel-Führung?</p>
+
+    <form 
+      action="https://formsubmit.co/Knaack.Justus@gmail.com" 
+      method="POST" 
+      target="_blank" 
+      onsubmit="setTimeout(() => { window.location.href = 'danke.html'; }, 100);"
+    >
+      <label for="datum">Gewünschtes Datum:</label><br>
+      <input type="date" id="datum" name="Datum" required><br><br>
+
+      <label for="uhrzeit">Gewünschte Uhrzeit:</label><br>
+      <input type="time" id="uhrzeit" name="Uhrzeit" required><br><br>
+
+      <input type="hidden" name="_subject" value="Paula möchte zur Orgel-Führung kommen!">
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- ✔️ Dieser Button funktioniert richtig -->
+      <button type="submit">Absenden & Weiter</button>
+    </form>
+  </div>
+  <p>PS: Checke diese Seite erneut, wenn du auf der Form-Submit Seite warst ;]</p>
+</body>
+</html>

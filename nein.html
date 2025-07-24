@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Vielleicht ein andermal?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Schade! 😕</h1>
+    <p>
+      Du hast sicher deine Gründe.<br>
+      Wenn du möchtest, kannst du mir kurz schreiben, welche es sind 😉😢 – vielleicht klappt es ja ein anderes Mal.
+    </p>
+    <form 
+  action="https://formsubmit.co/Knaack.Justus@gmail.com" 
+  method="POST" 
+  target="_blank" 
+  onsubmit="setTimeout(() => { window.location.href = 'naechstesmal.html'; }, 100);"
+>
+  <label for="begruendung">Deine Nachricht an mich:</label><br>
+  <textarea id="begruendung" name="Begründung" rows="5" cols="30" required></textarea><br><br>
+
+  <input type="hidden" name="_subject" value="Paula hat abgesagt">
+  <input type="hidden" name="_captcha" value="false">
+
+  <button type="submit">Absenden & Weiter</button>
+</form>
+  </div>
+  <p>Schau gerne nach dem form-submit erneut auf diese Seite zurück 😉 </p>
+</body>
+</html>
